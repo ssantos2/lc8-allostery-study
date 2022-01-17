@@ -8,9 +8,8 @@
 #SBATCH --output=trial-results-1-14-22
 #SBATCH --error=trial-error-1-14-22
 
-. //home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-1-14-22***
+. //home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-1-14-22
 module load gromacs/gromacs-2019_avx256
-WORKDIR= 
 INPUT= 3DVT_clean.pdb
 OUTPUT= 3DVT_processed.gro
 
