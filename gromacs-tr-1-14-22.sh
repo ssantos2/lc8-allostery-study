@@ -1,6 +1,5 @@
 #!/bin/bash 
 #SBATCH --job-name="trial-run-1-14-22"
-#SBATCH --partition=small 
 #SBATCH --account=santossh
 #SBATCH --nodes=1
 #SBATCH --mail-user=santossh@ohsu.edu
