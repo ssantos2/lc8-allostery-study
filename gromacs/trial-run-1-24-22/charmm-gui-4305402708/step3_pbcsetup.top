@@ -1,8 +1,8 @@
 ;
-;	File 'topol.top' was generated
+;	File 'step3_pbcsetup.top' was generated
 ;	By user: unknown (5801)
 ;	On host: exanode-8-19
-;	At date: Tue Jan 25 13:14:42 2022
+;	At date: Tue Jan 25 16:21:21 2022
 ;
 ;	This is a standalone topology file
 ;
@@ -13,7 +13,7 @@
 ;	Data prefix:  /home/groups/ZuckermanLab/russojd/gmx_mp_all
 ;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-1-24-22/charmm-gui-4305402708
 ;	Command line:
-;	  gmx pdb2gmx -f step3_pbcsetup.gro -p topol.top
+;	  gmx pdb2gmx -f step3_pbcsetup.gro -p step3_pbcsetup.top -ignh
 ;	Force field was read from the standard GROMACS share directory.
 ;
 
