@@ -1,0 +1,22 @@
+;
+;	File 'step3_pbcsetup.top' was generated
+;	By user: unknown (5801)
+;	On host: exanode-8-13
+;	At date: Fri Jan 28 16:00:17 2022
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.4 (-:
+;	
+;	Executable:   /home/groups/ZuckermanLab/russojd/gmx_mp_all/bin/gmx_mpi
+;	Data prefix:  /home/groups/ZuckermanLab/russojd/gmx_mp_all
+;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm-gui-4340799031
+;	Command line:
+;	  gmx pdb2gmx -f step3_pbcsetup.gro -p step3_pbcsetup.top -ff charmm27
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "charmm27.ff/forcefield.itp"
+
