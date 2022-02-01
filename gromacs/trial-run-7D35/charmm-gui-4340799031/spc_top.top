@@ -1,0 +1,49 @@
+;
+;	File 'spc_top.top' was generated
+;	By user: unknown (5801)
+;	On host: exanode-8-13
+;	At date: Tue Feb  1 14:35:55 2022
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.4 (-:
+;	
+;	Executable:   /home/groups/ZuckermanLab/russojd/gmx_mp_all/bin/gmx_mpi
+;	Data prefix:  /home/groups/ZuckermanLab/russojd/gmx_mp_all
+;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm-gui-4340799031
+;	Command line:
+;	  gmx pdb2gmx -f step3_pbcsetup.pdb -p spc_top.top -ff oplsaa -ignh -v
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "oplsaa.ff/forcefield.itp"
+
+; Include chain topologies
+#include "spc_top_Protein.itp"
+#include "spc_top_Protein2.itp"
+#include "spc_top_Ion3.itp"
+
+; Include water topology
+#include "oplsaa.ff/spc.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+Protein
+
+[ molecules ]
+; Compound        #mols
+Protein             1
+Protein2            1
+Ion3                1
