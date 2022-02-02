@@ -1,4 +1,4 @@
-title                   = 
+title                   = trial-run-7D35-spc-top
 
 cpp                     = /lib/cpp 
 
@@ -46,15 +46,12 @@ coulombtype             = PME
 
 tcoupl                  = Nose-Hoover 
 
-tc_grps                 = SOLU SOLV 
-
 tau_t                   = 1.0 1.0 
 
 ref_t                   = 303.15 303.15 
 
 ; 
 
-pcoupl                  = Parrinello-Rahman 
 
 pcoupltype              = isotropic 
 
@@ -77,7 +74,5 @@ continuation            = yes
 nstcomm                 = 100 
 
 comm_mode               = linear 
-
-comm_grps               = SOLU SOLV 
 
 ; 
