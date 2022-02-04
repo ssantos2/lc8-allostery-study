@@ -1,0 +1,22 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (5801)
+;	On host: exanode-8-13
+;	At date: Fri Jan 21 14:47:33 2022
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.4 (-:
+;	
+;	Executable:   /home/groups/ZuckermanLab/russojd/gmx_mp_all/bin/gmx_mpi
+;	Data prefix:  /home/groups/ZuckermanLab/russojd/gmx_mp_all
+;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-1-14-22
+;	Command line:
+;	  gmx pdb2gmx -f 3DVT_clean.pdb -o 3DVT_processed.gro -water spce -v
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "amber96.ff/forcefield.itp"
+
