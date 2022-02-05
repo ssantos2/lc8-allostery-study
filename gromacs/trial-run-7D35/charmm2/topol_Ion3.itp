@@ -1,0 +1,109 @@
+;
+;	File 'topol_Ion3.itp' was generated
+;	By user: unknown (5801)
+;	On host: exanode-8-13
+;	At date: Fri Feb  4 15:39:51 2022
+;
+;	This is a include topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.4 (-:
+;	
+;	Executable:   /home/groups/ZuckermanLab/russojd/gmx_mp_all/bin/gmx_mpi
+;	Data prefix:  /home/groups/ZuckermanLab/russojd/gmx_mp_all
+;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm2
+;	Command line:
+;	  gmx pdb2gmx -f 7D35_charmm-gui_processed.pdb -o 7D35.gro -p topol.top -ff oplsaa -ignh
+;	Force field was read from the standard GROMACS share directory.
+;
+
+[ moleculetype ]
+; Name            nrexcl
+Ion3                3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue   1 K   rtp K    q +1.0
+     1   opls_408      1      K      K      1          1    39.0983   ; qtot 1
+; residue   2 K   rtp K    q +1.0
+     2   opls_408      2      K      K      2          1    39.0983   ; qtot 2
+; residue   3 K   rtp K    q +1.0
+     3   opls_408      3      K      K      3          1    39.0983   ; qtot 3
+; residue   4 K   rtp K    q +1.0
+     4   opls_408      4      K      K      4          1    39.0983   ; qtot 4
+; residue   5 K   rtp K    q +1.0
+     5   opls_408      5      K      K      5          1    39.0983   ; qtot 5
+; residue   6 K   rtp K    q +1.0
+     6   opls_408      6      K      K      6          1    39.0983   ; qtot 6
+; residue   7 K   rtp K    q +1.0
+     7   opls_408      7      K      K      7          1    39.0983   ; qtot 7
+; residue   8 K   rtp K    q +1.0
+     8   opls_408      8      K      K      8          1    39.0983   ; qtot 8
+; residue   9 K   rtp K    q +1.0
+     9   opls_408      9      K      K      9          1    39.0983   ; qtot 9
+; residue  10 K   rtp K    q +1.0
+    10   opls_408     10      K      K     10          1    39.0983   ; qtot 10
+; residue  11 K   rtp K    q +1.0
+    11   opls_408     11      K      K     11          1    39.0983   ; qtot 11
+; residue  12 K   rtp K    q +1.0
+    12   opls_408     12      K      K     12          1    39.0983   ; qtot 12
+; residue  13 K   rtp K    q +1.0
+    13   opls_408     13      K      K     13          1    39.0983   ; qtot 13
+; residue  14 K   rtp K    q +1.0
+    14   opls_408     14      K      K     14          1    39.0983   ; qtot 14
+; residue  15 K   rtp K    q +1.0
+    15   opls_408     15      K      K     15          1    39.0983   ; qtot 15
+; residue  16 K   rtp K    q +1.0
+    16   opls_408     16      K      K     16          1    39.0983   ; qtot 16
+; residue  17 K   rtp K    q +1.0
+    17   opls_408     17      K      K     17          1    39.0983   ; qtot 17
+; residue  18 K   rtp K    q +1.0
+    18   opls_408     18      K      K     18          1    39.0983   ; qtot 18
+; residue  19 K   rtp K    q +1.0
+    19   opls_408     19      K      K     19          1    39.0983   ; qtot 19
+; residue  20 CL  rtp CL   q -1.0
+    20   opls_401     20     CL     CL     20         -1     35.453   ; qtot 18
+; residue  21 CL  rtp CL   q -1.0
+    21   opls_401     21     CL     CL     21         -1     35.453   ; qtot 17
+; residue  22 CL  rtp CL   q -1.0
+    22   opls_401     22     CL     CL     22         -1     35.453   ; qtot 16
+; residue  23 CL  rtp CL   q -1.0
+    23   opls_401     23     CL     CL     23         -1     35.453   ; qtot 15
+; residue  24 CL  rtp CL   q -1.0
+    24   opls_401     24     CL     CL     24         -1     35.453   ; qtot 14
+; residue  25 CL  rtp CL   q -1.0
+    25   opls_401     25     CL     CL     25         -1     35.453   ; qtot 13
+; residue  26 CL  rtp CL   q -1.0
+    26   opls_401     26     CL     CL     26         -1     35.453   ; qtot 12
+; residue  27 CL  rtp CL   q -1.0
+    27   opls_401     27     CL     CL     27         -1     35.453   ; qtot 11
+; residue  28 CL  rtp CL   q -1.0
+    28   opls_401     28     CL     CL     28         -1     35.453   ; qtot 10
+; residue  29 CL  rtp CL   q -1.0
+    29   opls_401     29     CL     CL     29         -1     35.453   ; qtot 9
+; residue  30 CL  rtp CL   q -1.0
+    30   opls_401     30     CL     CL     30         -1     35.453   ; qtot 8
+; residue  31 CL  rtp CL   q -1.0
+    31   opls_401     31     CL     CL     31         -1     35.453   ; qtot 7
+; residue  32 CL  rtp CL   q -1.0
+    32   opls_401     32     CL     CL     32         -1     35.453   ; qtot 6
+; residue  33 CL  rtp CL   q -1.0
+    33   opls_401     33     CL     CL     33         -1     35.453   ; qtot 5
+; residue  34 CL  rtp CL   q -1.0
+    34   opls_401     34     CL     CL     34         -1     35.453   ; qtot 4
+; residue  35 CL  rtp CL   q -1.0
+    35   opls_401     35     CL     CL     35         -1     35.453   ; qtot 3
+; residue  36 CL  rtp CL   q -1.0
+    36   opls_401     36     CL     CL     36         -1     35.453   ; qtot 2
+; residue  37 CL  rtp CL   q -1.0
+    37   opls_401     37     CL     CL     37         -1     35.453   ; qtot 1
+; residue  38 CL  rtp CL   q -1.0
+    38   opls_401     38     CL     CL     38         -1     35.453   ; qtot 0
+; residue  39 CL  rtp CL   q -1.0
+    39   opls_401     39     CL     CL     39         -1     35.453   ; qtot -1
+
+; Include Position restraint file
+#ifdef POSRES
+#include "posre_Ion3.itp"
+#endif
+

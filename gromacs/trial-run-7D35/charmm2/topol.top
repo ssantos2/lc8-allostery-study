@@ -1,0 +1,49 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (5801)
+;	On host: exanode-8-13
+;	At date: Fri Feb  4 15:39:50 2022
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.4 (-:
+;	
+;	Executable:   /home/groups/ZuckermanLab/russojd/gmx_mp_all/bin/gmx_mpi
+;	Data prefix:  /home/groups/ZuckermanLab/russojd/gmx_mp_all
+;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm2
+;	Command line:
+;	  gmx pdb2gmx -f 7D35_charmm-gui_processed.pdb -o 7D35.gro -p topol.top -ff oplsaa -ignh
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "oplsaa.ff/forcefield.itp"
+
+; Include chain topologies
+#include "topol_Protein.itp"
+#include "topol_Protein2.itp"
+#include "topol_Ion3.itp"
+
+; Include water topology
+#include "oplsaa.ff/spc.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+Protein
+
+[ molecules ]
+; Compound        #mols
+Protein             1
+Protein2            1
+Ion3                1
