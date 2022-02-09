@@ -20,7 +20,7 @@ coulombtype             = PME
 rcoulomb                = 1.2
 ;
 tcoupl                  = Nose-Hoover
-tc_grps                 = CLA POT TIP3
+tc_grps                 = Protein Non-Protein
 tau_t                   = 1.0 1.0
 ref_t                   = 303.15 303.15
 ;
@@ -29,7 +29,7 @@ constraint_algorithm    = LINCS
 ;
 nstcomm                 = 100
 comm_mode               = linear
-comm_grps               = CLA POT TIP3
+comm_grps               = Protein Non-Protein
 ;
 gen-vel                 = yes
 gen-temp                = 303.15
