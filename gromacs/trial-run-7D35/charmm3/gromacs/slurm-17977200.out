@@ -1,0 +1,4 @@
+slurmstepd: error: execve(): /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs: Permission denied
+srun: error: exanode-8-12: task 0: Exited with exit code 13
+slurmstepd: error: execve(): /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs: Permission denied
+srun: error: exanode-8-12: task 0: Exited with exit code 13
