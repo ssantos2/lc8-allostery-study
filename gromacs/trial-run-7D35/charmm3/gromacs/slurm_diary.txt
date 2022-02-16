@@ -1,0 +1,2 @@
+JOB_ID     PARTITION  JOB_NAME     STATUS   SUBMITTED
+18019337   gpu        7D35_md_0_1  PD       13:32 2/16/2022  
