@@ -1,0 +1,18 @@
+Starting at Tue Feb 15 19:33:25 PST 2022
+Running on hosts: exanode-7-18,exanode-8-12
+Running on 2 nodes.
+Running 4 tasks.
+Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
+slurmstepd: error: execve(): gmx: No such file or directory
+slurmstepd: error: execve(): gmx: No such file or directory
+srun: error: exanode-7-18: tasks 0-1: Exited with exit code 2
+slurmstepd: error: execve(): gmx: No such file or directory
+slurmstepd: error: execve(): gmx: No such file or directory
+srun: error: exanode-8-12: tasks 2-3: Exited with exit code 2
+slurmstepd: error: execve(): gmx: No such file or directory
+slurmstepd: error: execve(): gmx: No such file or directory
+slurmstepd: error: execve(): gmx: No such file or directory
+slurmstepd: error: execve(): gmx: No such file or directory
+srun: error: exanode-7-18: tasks 0-1: Exited with exit code 2
+srun: error: exanode-8-12: tasks 2-3: Exited with exit code 2
+Program finished with exit code 2 at: Tue Feb 15 19:33:27 PST 2022
