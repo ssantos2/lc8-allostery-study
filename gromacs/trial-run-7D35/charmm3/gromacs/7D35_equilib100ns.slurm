@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=7D35_md_0_1
-#SBATCH --output=7D35_md_0_1.errout
+#SBATCH --job-name=7D35_equilib100ns
+#SBATCH --output=7D35_equilib100ns.errout
 #SBATCH --partition=gpu
 #SBATCH --nodes 1
 #SBATCH --tasks 1
