@@ -1,17 +1,17 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (5801)
-;	On host: exanode-8-13
-;	At date: Mon Feb 14 17:14:48 2022
+;	On host: exanode-8-12
+;	At date: Wed Feb 16 19:35:57 2022
 ;
 ;	Created by:
-;	                     :-) GROMACS - gmx grompp, 2019.4 (-:
+;	                     :-) GROMACS - gmx grompp, 2020.2 (-:
 ;	
-;	Executable:   /home/groups/ZuckermanLab/russojd/gmx_mp_all/bin/gmx_mpi
-;	Data prefix:  /home/groups/ZuckermanLab/russojd/gmx_mp_all
+;	Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+;	Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 ;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
 ;	Command line:
-;	  gmx grompp -f step4.1_equilibration100ns.mdp -c step3_input.gro -r step3_input.gro -p topol.top -o 7D35_equilib100ns.tpr -v
+;	  gmx_mpi grompp -f step4.1_equilibration100ns.mdp -c step3_input.gro -r step3_input.gro -t 7D35_em100ns.cpt -p topol.top -o 7D35_equilib100ns.tpr -v
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -77,12 +77,10 @@ compressed-x-grps        =
 energygrps               = 
 
 ; NEIGHBORSEARCHING PARAMETERS
-; cut-off scheme (Verlet: particle based cut-offs, group: using charge groups)
+; cut-off scheme (Verlet: particle based cut-offs)
 cutoff-scheme            = Verlet
 ; nblist update frequency
 nstlist                  = 20
-; ns algorithm (simple or grid)
-ns-type                  = Grid
 ; Periodic boundary conditions: xyz, no, xy
 pbc                      = xyz
 periodic-molecules       = no
@@ -327,3 +325,6 @@ userreal4                = 0
 electric-field-x         = 0 0 0 0
 electric-field-y         = 0 0 0 0
 electric-field-z         = 0 0 0 0
+
+; Density guided simulation
+density-guided-simulation-active = false
