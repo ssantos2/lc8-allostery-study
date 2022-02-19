@@ -1,5 +1,5 @@
-/var/spool/slurmd/job18076373/slurm_script: line 19: ./run.sh: No such file or directory
-Starting at Fri Feb 18 16:20:08 PST 2022
+/var/spool/slurmd/job18076911/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Fri Feb 18 16:41:14 PST 2022
 Running on hosts: exanode-8-15
 Running on 1 nodes.
 Running 1 tasks.
@@ -7,8 +7,8 @@ Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-st
                       :-) GROMACS - gmx energy, 2020.2 (-:
 
                             GROMACS is written by:
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
      Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
     Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
  Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
   Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
@@ -66,6 +66,6 @@ NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
 You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
-slurmstepd: error: *** STEP 18076373.0 ON exanode-8-15 CANCELLED AT 2022-02-18T16:20:08 ***
+slurmstepd: error: *** STEP 18076911.0 ON exanode-8-15 CANCELLED AT 2022-02-18T16:41:14 ***
 srun: error: exanode-8-15: task 0: Exited with exit code 1
 Finished creating 7D35_energy100ns.xvg
