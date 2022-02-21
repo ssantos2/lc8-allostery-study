@@ -1,4 +1,4 @@
-# This file was created Mon Feb 21 13:31:44 2022
+# This file was created Mon Feb 21 14:07:09 2022
 # Created by:
 #                      :-) GROMACS - gmx energy, 2020.2 (-:
 # 
@@ -6,10 +6,10 @@
 # Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 # Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
 # Command line:
-#   gmx_mpi energy -f 7D35_equilib100ns.edr -o 7D35_energy100ns.xvg
+#   gmx_mpi energy -f 7D35_equilib100ns.edr -o 7D35_energy100ns1-3-4.xvg
 # gmx energy is part of G R O M A C S:
 #
-# GRoups of Organic Molecules in ACtion for Science
+# GROwing Monsters And Cloning Shrimps
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"
