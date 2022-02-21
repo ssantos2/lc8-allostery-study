@@ -1,8 +1,83 @@
-/var/spool/slurmd/job18077222/slurm_script: line 19: ./run.sh: No such file or directory
-Starting at Fri Feb 18 16:50:16 PST 2022
-Running on hosts: exanode-7-18
+/var/spool/slurmd/job18091088/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Mon Feb 21 10:42:41 PST 2022
+Running on hosts: exanode-8-13
 Running on 1 nodes.
 Running 1 tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
-/var/spool/slurmd/job18077222/slurm_script: line 28: unexpected EOF while looking for matching `"'
-/var/spool/slurmd/job18077222/slurm_script: line 29: syntax error: unexpected end of file
+                      :-) GROMACS - gmx energy, 2020.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx energy, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
+Command line:
+  gmx_mpi energy -f 7D35_equilib100ns.edr -o 7D35_energy100ns.xvg
+
+Opened 7D35_equilib100ns.edr as single precision energy file
+
+Select the terms you want from the following list by
+selecting either (part of) the name or the number or a combination.
+End your selection with an empty line or a zero.
+-------------------------------------------------------------------
+  1  Bond             2  U-B              3  Proper-Dih.      4  Improper-Dih. 
+  5  CMAP-Dih.        6  LJ-14            7  Coulomb-14       8  LJ-(SR)       
+  9  Coulomb-(SR)    10  Coul.-recip.    11  Position-Rest.  12  Potential     
+ 13  Kinetic-En.     14  Total-Energy    15  Conserved-En.   16  Temperature   
+ 17  Pressure        18  Constr.-rmsd    19  Vir-XX          20  Vir-XY        
+ 21  Vir-XZ          22  Vir-YX          23  Vir-YY          24  Vir-YZ        
+ 25  Vir-ZX          26  Vir-ZY          27  Vir-ZZ          28  Pres-XX       
+ 29  Pres-XY         30  Pres-XZ         31  Pres-YX         32  Pres-YY       
+ 33  Pres-YZ         34  Pres-ZX         35  Pres-ZY         36  Pres-ZZ       
+ 37  #Surf*SurfTen   38  T-Protein       39  T-non-Protein 
+
+
+-------------------------------------------------------
+Program:     gmx energy, version 2020.2
+Source file: src/gromacs/gmxana/gmx_energy.cpp (line 298)
+
+Fatal error:
+No energy terms selected
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 18091088.0 ON exanode-8-13 CANCELLED AT 2022-02-21T10:42:45 ***
+srun: error: exanode-8-13: task 0: Exited with exit code 1
+slurmstepd: error: execve(): 1: No such file or directory
+srun: error: exanode-8-13: task 0: Exited with exit code 2
+Finished creating 7D35_energy100ns.xvg
