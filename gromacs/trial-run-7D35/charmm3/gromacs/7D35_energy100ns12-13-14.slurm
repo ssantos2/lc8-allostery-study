@@ -24,6 +24,6 @@ echo "Running on $SLURM_NNODES nodes."
 echo "Running $SLURM_NTASKS tasks."
 echo "Current working directory is `pwd`"
 
-echo "12 13 14 \n" |srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi energy -f 7D35_equilib100ns.edr -o 7D35_energy100ns.xvg 
+echo "12 13 14 \n" |srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi energy -f 7D35_equilib100ns.edr -o 7D35_energy100ns12-13-14.xvg 
 
-echo "Finished creating 7D35_energy100ns.xvg"
+echo "Finished creating 7D35_energy100ns12-13-14.xvg"
