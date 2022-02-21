@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=7D35_energy100ns
-#SBATCH --output=7D35_energy100ns.errout
+#SBATCH --job-name=7D35_energy100ns1-3-4
+#SBATCH --output=7D35_energy100ns1-3-4.errout
 #SBATCH --partition=gpu
 #SBATCH --nodes 1
 #SBATCH --tasks 1
@@ -24,6 +24,6 @@ echo "Running on $SLURM_NNODES nodes."
 echo "Running $SLURM_NTASKS tasks."
 echo "Current working directory is `pwd`"
 
-echo "1 3 4 \n" |srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi energy -f 7D35_equilib100ns.edr -o 7D35_energy100ns.xvg 
+echo "1 3 4 \n" |srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi energy -f 7D35_equilib100ns.edr -o 7D35_energy100ns1-3-4.xvg 
 
-echo "Finished creating 7D35_energy100ns.xvg"
+echo "Finished creating 7D35_energy100ns1-3-4.xvg"
