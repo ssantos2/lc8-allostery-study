@@ -3,7 +3,7 @@
 #SBATCH --output=7D35_md_100ns.errout
 #SBATCH --partition=gpu
 #SBATCH --nodes 1
-#SBATCH --tasks 1
+#SBATCH --tasks 2
 #SBATCH --cpus-per-task 6
 #SBATCH --gres gpu:1
 #SBATCH --time=1:0:0
