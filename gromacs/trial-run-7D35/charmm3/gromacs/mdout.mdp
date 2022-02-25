@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (5801)
 ;	On host: exanode-8-16
-;	At date: Wed Feb 23 17:02:09 2022
+;	At date: Thu Feb 24 23:59:28 2022
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2020.2 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 ;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
 ;	Command line:
-;	  gmx_mpi grompp -f step5_production100ns.mdp -c step3_input.gro -t 7D35_equilib100ns.cpt -p topol.top -o 7D35_md_100nsa.tpr
+;	  gmx_mpi grompp -f step5_production100ns.mdp -c step3_input.gro -t 7D35_equilib100ns.cpt -p topol.top -o 7D35_md_100nsa_2.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -24,7 +24,7 @@ define                   =
 integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
-dt                       = 0.002
+dt                       = 0.0002
 nsteps                   = 50000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
