@@ -6,7 +6,7 @@
 #SBATCH --tasks 2
 #SBATCH --cpus-per-task 6
 #SBATCH --gres gpu:1
-#SBATCH --time=13:0:0
+#SBATCH --time=16:0:0
 
 module use /home/exacloud/software/modules/
 #module load gromacs/gromacs-2019
