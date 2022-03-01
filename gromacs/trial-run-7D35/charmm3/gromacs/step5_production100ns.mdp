@@ -9,7 +9,7 @@ nstenergy               = 1000
 nstlog                  = 1000
 ;
 cutoff-scheme           = Verlet
-nstlist                 = 20
+nstlist                 = 25
 vdwtype                 = Cut-off
 vdw-modifier            = Force-switch
 rvdw_switch             = 1.0
