@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (5801)
 ;	On host: exanode-8-18
-;	At date: Mon Feb 28 10:18:04 2022
+;	At date: Tue Mar  1 10:28:19 2022
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2020.2 (-:
@@ -80,7 +80,7 @@ energygrps               =
 ; cut-off scheme (Verlet: particle based cut-offs)
 cutoff-scheme            = Verlet
 ; nblist update frequency
-nstlist                  = 20
+nstlist                  = 25
 ; Periodic boundary conditions: xyz, no, xy
 pbc                      = xyz
 periodic-molecules       = no
@@ -234,7 +234,7 @@ awh                      = no
 ; Enforced rotation: No or Yes
 rotation                 = no
 
-; Group to display and/or manipulate in interactive MD session
+; Group to display and/r manipulate in interactive MD session
 IMD-group                = 
 
 ; NMR refinement stuff 
@@ -328,3 +328,4 @@ electric-field-z         = 0 0 0 0
 
 ; Density guided simulation
 density-guided-simulation-active = false
+
