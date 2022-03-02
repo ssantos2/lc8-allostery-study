@@ -1,0 +1,31 @@
+# This file was created Wed Mar  2 14:01:38 2022
+# Created by:
+#                      :-) GROMACS - gmx gyrate, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
+# Command line:
+#   gmx_mpi gyrate -s 7D35_md_100ns.tpr -f 7D35_md_100ns_noPBC.xtc -o 7D35_gyrate_100ns.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.25759    0.920655     1.03387      1.1165
+     10000     1.28521     1.01965      1.0307     1.09614
+     20000     1.28093     1.11482     0.99564     1.02346
+     30000     1.27764     1.06644     1.06555    0.996026

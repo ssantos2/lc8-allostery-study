@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (5801)
 ;	On host: exanode-8-18
-;	At date: Tue Mar  1 10:28:19 2022
+;	At date: Wed Mar  2 09:52:01 2022
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2020.2 (-:
@@ -234,7 +234,7 @@ awh                      = no
 ; Enforced rotation: No or Yes
 rotation                 = no
 
-; Group to display and/r manipulate in interactive MD session
+; Group to display and/or manipulate in interactive MD session
 IMD-group                = 
 
 ; NMR refinement stuff 
@@ -328,4 +328,3 @@ electric-field-z         = 0 0 0 0
 
 ; Density guided simulation
 density-guided-simulation-active = false
-
