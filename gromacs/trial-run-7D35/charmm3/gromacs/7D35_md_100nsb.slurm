@@ -25,4 +25,4 @@ echo "Running $SLURM_NTASKS tasks."
 echo "Current working directory is `pwd`"
 
 srun --mpi=pmi2 gmx_mpi grompp -f step5_production100ns.mdp -c step3_input.gro -t 7D35_equilib100ns.cpt -p topol.top -o 7D35_md_100nsb_2.tpr
-srun --mpi=pmi2 -N 1 -n 1 -c 6  gmx_mpi mdrun -deffnm 7D35_md_100nsb -v -ntomp 1  -cpt 60  -maxh 24
+srun --mpi=pmi2 -N 1 -n 1 -c 6  gmx_mpi mdrun -deffnm 7D35_md_100nsb_2 -v -ntomp 1  -cpt 60  -maxh 24
