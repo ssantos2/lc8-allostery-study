@@ -1,0 +1,29 @@
+# This file was created Fri Mar  4 10:43:00 2022
+# Created by:
+#                       :-) GROMACS - gmx rms, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/trial-run-7D35/charmm3/gromacs
+# Command line:
+#   gmx_mpi rms -s 7D35_em100ns.tpr -f 7D35_md_100nsa_2noPBC.xtc -o 7D35_rmsdxtal_100nsa_2.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Green Red Orange Magenta Azure Cyan Skyblue
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0351645
+   1.0000000    0.1340908
+   2.0000000    0.0895953
+   3.0000002    0.0735399
+   4.0000000    0.0938241
+   5.0000000    0.0805452
+   6.0000005    0.0800734
+   7.0000005    0.1018337
+   8.0000000    0.0857353
+   9.0000000    0.1275326
+  10.0000000    0.1679877
