@@ -1,6 +1,6 @@
-/var/spool/slurmd/job18225949/slurm_script: line 19: ./run.sh: No such file or directory
-Starting at Wed Mar  9 15:55:57 PST 2022
-Running on hosts: exanode-8-14
+/var/spool/slurmd/job18233957/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Thu Mar 10 10:31:29 PST 2022
+Running on hosts: exanode-7-18
 Running on 1 nodes.
 Running 1 tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer/gromacs
@@ -37,10 +37,10 @@ Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gc
 Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer/gromacs
 Command line:
-  gmx_mpi grompp -f 7D35-dim_em100ns.mdp -c step3_input.gro -p topol.top -o 7D35-dim_em100ns.tpr -v
+  gmx_mpi grompp -f 7D35-dim_em100ns.mdp -c step3_input.gro -r step3_input.gro -p topol.top -o 7D35-dim_em100ns.tpr -v
 
 checking input for internal consistency...
-Setting the LD random seed to -1413117008
+Setting the LD random seed to 68179045
 Generated 900 of the 903 non-bonded parameter combinations
 Generating 1-4 interactions: fudge = 1
 Generated 528 of the 903 1-4 parameter combinations
@@ -53,6 +53,45 @@ Excluding 1 bonded neighbours molecule type 'CLA'
 Excluding 2 bonded neighbours molecule type 'TIP3'
 processing coordinates...
 double-checking input for internal consistency...
+Reading position restraint coords from step3_input.gro
+renumbering atomtypes...
+converting bonded parameters...
+initialising group options...
+processing index file...
+Making dummy/rest group for T-Coupling containing 32216 elements
+Making dummy/rest group for Acceleration containing 32216 elements
+Making dummy/rest group for Freeze containing 32216 elements
+Making dummy/rest group for Energy Mon. containing 32216 elements
+Making dummy/rest group for VCM containing 32216 elements
+Number of degrees of freedom in T-Coupling group rest is 66033.00
+Making dummy/rest group for User1 containing 32216 elements
+Making dummy/rest group for User2 containing 32216 elements
+Making dummy/rest group for Compressed X containing 32216 elements
+Making dummy/rest group for Or. Res. Fit containing 32216 elements
+Making dummy/rest group for QMMM containing 32216 elements
+T-Coupling       has 1 element(s): rest
+Energy Mon.      has 1 element(s): rest
+Acceleration     has 1 element(s): rest
+Freeze           has 1 element(s): rest
+User1            has 1 element(s): rest
+User2            has 1 element(s): rest
+VCM              has 1 element(s): rest
+Compressed X     has 1 element(s): rest
+Or. Res. Fit     has 1 element(s): rest
+QMMM             has 1 element(s): rest
+
+NOTE 1 [file 7D35-dim_em100ns.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+Estimate for the relative computational load of the PME mesh part: 0.14
+writing run input file...
+
+There was 1 note
+
+GROMACS reminds you: "Nada e organico, e tudo programado" (Pitty)
+
 processing topology...
 turning H bonds into constraints...
 turning H bonds into constraints...
@@ -61,31 +100,14 @@ turning H bonds into constraints...
 turning H bonds into constraints...
 turning H bonds into constraints...
 turning H bonds into constraints...
-
--------------------------------------------------------
-Program:     gmx grompp, version 2020.2
-Source file: src/gromacs/gmxpreprocess/grompp.cpp (line 1947)
-
-Fatal error:
-Cannot find position restraint file restraint.gro (option -r).
-From GROMACS-2018, you need to specify the position restraint coordinate files
-explicitly to avoid mistakes, although you can still use the same file as you
-specify for the -c option.
-
-For more information and tips for troubleshooting, please check the GROMACS
-website at http://www.gromacs.org/Documentation/Errors
--------------------------------------------------------
---------------------------------------------------------------------------
-MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
-with errorcode 1.
-
-NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
-You may or may not see output from other processes, depending on
-exactly when Open MPI kills them.
---------------------------------------------------------------------------
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 18225949.0 ON exanode-8-14 CANCELLED AT 2022-03-09T15:56:01 ***
-srun: error: exanode-8-14: task 0: Exited with exit code 1
+Analysing residue names:
+There are:   192    Protein residues
+There are:  9706      Other residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 60x60x60, spacing 0.117 0.117 0.117
+This run will generate roughly 22 Mb of data
 Finished creating 7D35_equilib100ns.tpr
                       :-) GROMACS - gmx mdrun, 2020.2 (-:
 
@@ -122,31 +144,39 @@ Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D3
 Command line:
   gmx_mpi mdrun -deffnm 7D35-dim_em100ns -v -ntomp 1 -cpt 60 -maxh 24
 
+Compiled SIMD: AVX_256, but for this host/run AVX2_256 might be better (see
+log).
+Reading file 7D35-dim_em100ns.tpr, VERSION 2020.2 (single precision)
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI process
 
--------------------------------------------------------
-Program:     gmx mdrun, version 2020.2
-Source file: src/gromacs/options/options.cpp (line 179)
-Function:    void gmx::internal::OptionSectionImpl::finish()
+Non-default thread affinity set, disabling internal thread affinity
 
-Error in user input:
-Invalid input values
-  In option s
-    Required option was not provided, and the default file 'topol' does not
-    exist or is not accessible.
-    The following extensions were tried to complete the file name:
-      .tpr
+Using 1 OpenMP thread 
 
-For more information and tips for troubleshooting, please check the GROMACS
-website at http://www.gromacs.org/Documentation/Errors
--------------------------------------------------------
---------------------------------------------------------------------------
-MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
-with errorcode 1.
 
-NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
-You may or may not see output from other processes, depending on
-exactly when Open MPI kills them.
---------------------------------------------------------------------------
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 18225949.1 ON exanode-8-14 CANCELLED AT 2022-03-09T15:56:02 ***
-srun: error: exanode-8-14: task 0: Exited with exit code 1
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =      5000000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -4.70458e+05 Fmax= 7.40686e+03, atom= 2975
+Step=    1, Dmax= 1.0e-02 nm, Epot= -4.71509e+05 Fmax= 2.46157e+03, atom= 2975
+Step=    2, Dmax= 1.2e-02 nm, Epot= -4.71650e+05 Fmax= 6.40890e+03, atom= 1477
+Step=    3, Dmax= 1.4e-02 nm, Epot= -4.70168e+05 Fmax= 1.25507e+04, atom= 1477Step=    4, Dmax= 7.2e-03 nm, Epot= -4.72538e+05 Fmax= 3.03755e+03, atom= 1477
+Step=    5, Dmax= 8.6e-03 nm, Epot= -4.72056e+05 Fmax= 8.20262e+03, atom= 1477Step=    6, Dmax= 4.3e-03 nm, Epot= -4.72743e+05 Fmax= 2.59957e+03, atom= 1477
+Step=    7, Dmax= 5.2e-03 nm, Epot= -4.72812e+05 Fmax= 4.19565e+03, atom= 1477
+Step=    8, Dmax= 6.2e-03 nm, Epot= -4.72985e+05 Fmax= 3.93360e+03, atom= 1477
+Step=    9, Dmax= 7.5e-03 nm, Epot= -4.72955e+05 Fmax= 5.85215e+03, atom= 1477Step=   10, Dmax= 3.7e-03 nm, Epot= -4.73235e+05 Fmax= 9.52234e+02, atom= 1477
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 11 steps
+Potential Energy  = -4.7323512e+05
+Maximum force     =  9.5223358e+02 on atom 1477
+Norm of force     =  5.7357903e+01
+
+GROMACS reminds you: "Any one who considers arithmetical methods of producing random digits is, of course, in a state of sin." (John von Neumann)
+
