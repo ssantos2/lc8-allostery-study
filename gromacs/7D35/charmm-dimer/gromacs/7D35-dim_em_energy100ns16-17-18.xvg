@@ -1,0 +1,34 @@
+# This file was created Thu Mar 10 13:39:58 2022
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer/gromacs
+# Command line:
+#   gmx_mpi energy -f 7D35-dim_em100ns.edr -o 7D35-dim_em_energy100ns16-17-18.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GRowing Old MAkes el Chrono Sweat
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Vir-XY"
+@ s1 legend "Vir-XZ"
+@ s2 legend "Vir-YX"
+    0.000000  -2733.561035  3854.513428  -2733.774414
+    1.000000  -2713.486816  3797.490723  -2713.602539
+    2.000000  -2610.627930  3683.267822  -2610.853027
+    4.000000  -2620.640625  3148.705322  -2620.776855
+    6.000000  -2596.004395  3550.784180  -2595.948730
+    7.000000  -2590.126953  3199.559082  -2590.247070
+    8.000000  -2555.742188  3665.416992  -2555.698730
+   10.000000  -2556.977539  3397.408203  -2557.230469

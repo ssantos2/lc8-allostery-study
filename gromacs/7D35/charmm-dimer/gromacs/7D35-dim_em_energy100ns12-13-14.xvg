@@ -1,0 +1,34 @@
+# This file was created Thu Mar 10 13:39:41 2022
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer/gromacs
+# Command line:
+#   gmx_mpi energy -f 7D35-dim_em100ns.edr -o 7D35-dim_em_energy100ns12-13-14.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol), (bar), ()"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+@ s1 legend "Pressure"
+@ s2 legend "Constr. rmsd"
+    0.000000  -470458.312500  -2223.487305    0.000002
+    1.000000  -471509.156250  -2433.958008    0.000002
+    2.000000  -471650.062500  -3050.293945    0.000002
+    4.000000  -472538.406250  -2807.646484    0.000002
+    6.000000  -472742.625000  -2996.037842    0.000002
+    7.000000  -472812.312500  -2875.090576    0.000002
+    8.000000  -472984.937500  -3136.944580    0.000002
+   10.000000  -473235.125000  -3032.974609    0.000002
