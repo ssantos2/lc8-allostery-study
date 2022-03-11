@@ -1,5 +1,5 @@
-/var/spool/slurmd/job18243097/slurm_script: line 19: ./run.sh: No such file or directory
-Starting at Fri Mar 11 11:59:39 PST 2022
+/var/spool/slurmd/job18245230/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Fri Mar 11 13:56:09 PST 2022
 Running on hosts: exanode-8-6
 Running on 1 nodes.
 Running 2 tasks.
@@ -37,52 +37,67 @@ Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gc
 Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer-100mMNaCl/gromacs
 Command line:
-  gmx_mpi grompp -f 7D35d_100ns_md.mdp -c step3_input.gro -t 7D35d_100ns_eq.cpt -p topol.top -o 7D35d_100ns_md.tpr
+  gmx_mpi grompp -f 7D35d_100ns_md.mdp -c 7D35d_100ns_em.gro -r 7D35d_100ns_em.gro -t 7D35d_100ns_eq.cpt -p topol.top -o 7D35d_100ns_md.tpr
 
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+
+NOTE 1 [file 7D35d_100ns_md.mdp]:
+  leapfrog does not yet support Nose-Hoover chains, nhchainlength reset to 1
+
+Setting the LD random seed to 477533681
+
+NOTE 1 [file 7D35d_100ns_md.mdp]:
+  leapfrog does not yet support Nose-Hoover chains, nhchainlength reset to 1
+
+Setting the LD random seed to -1748674221
+Generated 900 of the 903 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 528 of the 903 1-4 parameter combinations
+Generated 900 of the 903 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 528 of the 903 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'PROA'
+Excluding 3 bonded neighbours molecule type 'PROB'
+Excluding 3 bonded neighbours molecule type 'P2PROA'
+Excluding 3 bonded neighbours molecule type 'P2PROB'
+Excluding 1 bonded neighbours molecule type 'SOD'
+Excluding 1 bonded neighbours molecule type 'CLA'
+Excluding 2 bonded neighbours molecule type 'TIP3'
+Excluding 3 bonded neighbours molecule type 'PROA'
+Excluding 3 bonded neighbours molecule type 'PROB'
+Excluding 3 bonded neighbours molecule type 'P2PROA'
+Excluding 3 bonded neighbours molecule type 'P2PROB'
+Excluding 1 bonded neighbours molecule type 'SOD'
+Excluding 1 bonded neighbours molecule type 'CLA'
+Excluding 2 bonded neighbours molecule type 'TIP3'
 
 -------------------------------------------------------
 Program:     gmx grompp, version 2020.2
-Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
-Function:    void gmx::CommandLineParser::parse(int*, char**)
-MPI rank:    1 (out of 2)
-
-Error in user input:
-Invalid command-line options
-  In command-line option -t
-    File '7D35d_100ns_eq.cpt' does not exist or is not accessible.
-    The file could not be opened.
-      Reason: No such file or directory
-      (call to fopen() returned error code 2)
-
-For more information and tips for troubleshooting, please check the GROMACS
-website at http://www.gromacs.org/Documentation/Errors
--------------------------------------------------------
---------------------------------------------------------------------------
-MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
-with errorcode 1.
-
-NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
-You may or may not see output from other processes, depending on
-exactly when Open MPI kills them.
---------------------------------------------------------------------------
-
--------------------------------------------------------
-Program:     gmx grompp, version 2020.2
-Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
-Function:    void gmx::CommandLineParser::parse(int*, char**)
+Source file: src/gromacs/gmxpreprocess/readir.cpp (line 2701)
 MPI rank:    0 (out of 2)
 
-Error in user input:
-Invalid command-line options
-  In command-line option -t
-    File '7D35d_100ns_eq.cpt' does not exist or is not accessible.
-    The file could not be opened.
-      Reason: No such file or directory
-      (call to fopen() returned error code 2)
+Fatal error:
+Group SOLU referenced in the .mdp file was not found in the index file.
+Group names must match either [moleculetype] names or custom index group
+names, in which case you must supply an index file to the '-n' option
+of grompp.
 
 For more information and tips for troubleshooting, please check the GROMACS
 website at http://www.gromacs.org/Documentation/Errors
 -------------------------------------------------------
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Analysing residue names:
+There are:   192    Protein residues
+There are:  9672      Other residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
 --------------------------------------------------------------------------
 MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
 with errorcode 1.
@@ -91,12 +106,14 @@ NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
 You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
-slurmstepd: error: *** STEP 18243097.0 ON exanode-8-6 CANCELLED AT 2022-03-11T11:59:40 ***
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-srun: error: exanode-8-6: tasks 0-1: Exited with exit code 1
+slurmstepd: error: *** STEP 18245230.0 ON exanode-8-6 CANCELLED AT 2022-03-11T13:56:11 ***
+srun: error: exanode-8-6: task 0: Exited with exit code 1
+srun: error: exanode-8-6: task 1: Killed
                       :-) GROMACS - gmx mdrun, 2020.2 (-:
 
                             GROMACS is written by:
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
      Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
     Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
  Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
@@ -154,6 +171,5 @@ NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
 You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 18243097.1 ON exanode-8-6 CANCELLED AT 2022-03-11T11:59:41 ***
+slurmstepd: error: *** STEP 18245230.1 ON exanode-8-6 CANCELLED AT 2022-03-11T13:56:11 ***
 srun: error: exanode-8-6: task 0: Exited with exit code 1
