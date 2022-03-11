@@ -20,7 +20,7 @@ coulombtype             = PME
 rcoulomb                = 1.2
 ;
 tcoupl                  = Nose-Hoover
-tc_grps                 = SOLU SOLV
+tc_grps                 = Protein Non-Protein
 tau_t                   = 1.0 1.0
 ref_t                   = 298.15 298.15
 ;
