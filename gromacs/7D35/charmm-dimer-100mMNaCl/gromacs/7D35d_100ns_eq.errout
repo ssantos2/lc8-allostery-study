@@ -1,5 +1,5 @@
-/var/spool/slurmd/job18242465/slurm_script: line 19: ./run.sh: No such file or directory
-Starting at Fri Mar 11 11:31:04 PST 2022
+/var/spool/slurmd/job18242636/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Fri Mar 11 11:38:34 PST 2022
 Running on hosts: exanode-8-6
 Running on 1 nodes.
 Running 1 tasks.
@@ -37,21 +37,57 @@ Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gc
 Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer-100mMNaCl/gromacs
 Command line:
-  gmx_mpi grompp -f 7D35d_100ns_eq.mdp -c step3_input.gro -r step3_input.gro -t 7D35d_100ns_em.cpt -p topol.top -o 7D35d_100ns_eq.tpr -v
+  gmx_mpi grompp -f 7D35d_100ns_eq.mdp -c 7D35d_100ns_em.gro -r 7D35d_100ns_em.gro -p topol.top -o 7D35d_100ns_eq.tpr -v
 
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+checking input for internal consistency...
+
+NOTE 1 [file 7D35d_100ns_eq.mdp]:
+  leapfrog does not yet support Nose-Hoover chains, nhchainlength reset to 1
+
+Setting the LD random seed to -1090135760
+Generated 900 of the 903 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 528 of the 903 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'PROA'
+Excluding 3 bonded neighbours molecule type 'PROB'
+Excluding 3 bonded neighbours molecule type 'P2PROA'
+Excluding 3 bonded neighbours molecule type 'P2PROB'
+Excluding 1 bonded neighbours molecule type 'SOD'
+Excluding 1 bonded neighbours molecule type 'CLA'
+Excluding 2 bonded neighbours molecule type 'TIP3'
+processing coordinates...
+double-checking input for internal consistency...
+Setting gen_seed to -464297338
+Velocities were taken from a Maxwell distribution at 298.15 K
+Reading position restraint coords from 7D35d_100ns_em.gro
+renumbering atomtypes...
+converting bonded parameters...
+initialising group options...
+processing index file...
+processing topology...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Analysing residue names:
+There are:   192    Protein residues
+There are:  9672      Other residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
 
 -------------------------------------------------------
 Program:     gmx grompp, version 2020.2
-Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
-Function:    void gmx::CommandLineParser::parse(int*, char**)
+Source file: src/gromacs/gmxpreprocess/readir.cpp (line 2701)
 
-Error in user input:
-Invalid command-line options
-  In command-line option -t
-    File '7D35d_100ns_em.cpt' does not exist or is not accessible.
-    The file could not be opened.
-      Reason: No such file or directory
-      (call to fopen() returned error code 2)
+Fatal error:
+Group SOLU referenced in the .mdp file was not found in the index file.
+Group names must match either [moleculetype] names or custom index group
+names, in which case you must supply an index file to the '-n' option
+of grompp.
 
 For more information and tips for troubleshooting, please check the GROMACS
 website at http://www.gromacs.org/Documentation/Errors
@@ -65,7 +101,7 @@ You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 18242465.0 ON exanode-8-6 CANCELLED AT 2022-03-11T11:31:05 ***
+slurmstepd: error: *** STEP 18242636.0 ON exanode-8-6 CANCELLED AT 2022-03-11T11:38:36 ***
 srun: error: exanode-8-6: task 0: Exited with exit code 1
 Finished creating 7D35d_100ns_eq.tpr
                       :-) GROMACS - gmx mdrun, 2020.2 (-:
@@ -129,5 +165,5 @@ You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 18242465.1 ON exanode-8-6 CANCELLED AT 2022-03-11T11:31:05 ***
+slurmstepd: error: *** STEP 18242636.1 ON exanode-8-6 CANCELLED AT 2022-03-11T11:38:36 ***
 srun: error: exanode-8-6: task 0: Exited with exit code 1
