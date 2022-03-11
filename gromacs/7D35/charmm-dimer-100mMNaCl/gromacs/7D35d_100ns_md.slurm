@@ -1,39 +1,28 @@
-integrator              = md
-dt                      = 0.0004
-nsteps                  = 50000000
-nstxtcout               = 5000000
-nstvout                 = 5000000
-nstfout                 = 5000000
-nstcalcenergy           = 100
-nstenergy               = 1000
-nstlog                  = 1000
-;
-cutoff-scheme           = Verlet
-nstlist                 = 20
-vdwtype                 = Cut-off
-vdw-modifier            = Force-switch
-rvdw_switch             = 1.0
-rvdw                    = 1.2
-rlist                   = 1.2
-rcoulomb                = 1.2
-coulombtype             = PME
-;
-tcoupl                  = Nose-Hoover
-tc_grps                 = SOLU SOLV
-tau_t                   = 1.0 1.0
-ref_t                   = 298.15 298.15
-;
-pcoupl                  = Parrinello-Rahman
-pcoupltype              = isotropic
-tau_p                   = 5.0
-compressibility         = 4.5e-5
-ref_p                   = 1.0
-;
-constraints             = h-bonds
-constraint_algorithm    = LINCS
-continuation            = yes
-;
-nstcomm                 = 100
-comm_mode               = linear
-comm_grps               = SOLU SOLV
-;
+#!/bin/bash
+#SBATCH --job-name=7D35d_100ns_md
+#SBATCH --output=7D35d_100ns_md.errout
+#SBATCH --partition=gpu
+#SBATCH --nodes 1
+#SBATCH --tasks 2
+#SBATCH --cpus-per-task 6
+#SBATCH --gres gpu:1
+#SBATCH --time=48:0:0
+
+module use /home/exacloud/software/modules/
+#module load gromacs/gromacs-2019
+#module load gromacs/gromacs-2019_avx256
+
+module load openmpi/3.1.5
+module load mpi/mpich-3.0-x86_64
+module load gromacs/2020.2+cuda
+
+./run.sh
+
+echo "Starting at `date`"
+echo "Running on hosts: $SLURM_NODELIST"
+echo "Running on $SLURM_NNODES nodes."
+echo "Running $SLURM_NTASKS tasks."
+echo "Current working directory is `pwd`"
+
+srun --mpi=pmi2 gmx_mpi grompp -f 7D35d_100ns_md.mdp -c step3_input.gro -t 7D35d_100ns_eq.cpt -p topol.top -o 7D35d_100ns_md.tpr
+srun --mpi=pmi2 -N 1 -n 1 -c 6  gmx_mpi mdrun -deffnm 7D35d_100ns_md -v -ntomp 1  -cpt 60  -maxh 24
