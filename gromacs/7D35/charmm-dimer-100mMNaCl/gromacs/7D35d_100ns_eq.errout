@@ -1,5 +1,5 @@
-/var/spool/slurmd/job18242636/slurm_script: line 19: ./run.sh: No such file or directory
-Starting at Fri Mar 11 11:38:34 PST 2022
+/var/spool/slurmd/job18242729/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Fri Mar 11 11:43:55 PST 2022
 Running on hosts: exanode-8-6
 Running on 1 nodes.
 Running 1 tasks.
@@ -45,7 +45,7 @@ checking input for internal consistency...
 NOTE 1 [file 7D35d_100ns_eq.mdp]:
   leapfrog does not yet support Nose-Hoover chains, nhchainlength reset to 1
 
-Setting the LD random seed to -1090135760
+Setting the LD random seed to -380052622
 Generated 900 of the 903 non-bonded parameter combinations
 Generating 1-4 interactions: fudge = 1
 Generated 528 of the 903 1-4 parameter combinations
@@ -58,7 +58,7 @@ Excluding 1 bonded neighbours molecule type 'CLA'
 Excluding 2 bonded neighbours molecule type 'TIP3'
 processing coordinates...
 double-checking input for internal consistency...
-Setting gen_seed to -464297338
+Setting gen_seed to 1641978854
 Velocities were taken from a Maxwell distribution at 298.15 K
 Reading position restraint coords from 7D35d_100ns_em.gro
 renumbering atomtypes...
@@ -101,7 +101,7 @@ You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 18242636.0 ON exanode-8-6 CANCELLED AT 2022-03-11T11:38:36 ***
+slurmstepd: error: *** STEP 18242729.0 ON exanode-8-6 CANCELLED AT 2022-03-11T11:43:57 ***
 srun: error: exanode-8-6: task 0: Exited with exit code 1
 Finished creating 7D35d_100ns_eq.tpr
                       :-) GROMACS - gmx mdrun, 2020.2 (-:
@@ -165,5 +165,5 @@ You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 18242636.1 ON exanode-8-6 CANCELLED AT 2022-03-11T11:38:36 ***
+slurmstepd: error: *** STEP 18242729.1 ON exanode-8-6 CANCELLED AT 2022-03-11T11:43:58 ***
 srun: error: exanode-8-6: task 0: Exited with exit code 1

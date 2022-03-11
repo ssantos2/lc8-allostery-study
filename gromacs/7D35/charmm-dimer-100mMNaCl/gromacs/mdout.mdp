@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (5801)
 ;	On host: exanode-8-6
-;	At date: Fri Mar 11 11:38:34 2022
+;	At date: Fri Mar 11 11:43:56 2022
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2020.2 (-:
@@ -35,7 +35,7 @@ comm_mode                = linear
 ; number of steps for center of mass motion removal
 nstcomm                  = 100
 ; group(s) for center of mass motion removal
-comm_grps                = SOLU SOLV
+comm_grps                = Protein Non-Protein
 
 ; LANGEVIN DYNAMICS OPTIONS
 ; Friction coefficient (amu/ps) and random seed
