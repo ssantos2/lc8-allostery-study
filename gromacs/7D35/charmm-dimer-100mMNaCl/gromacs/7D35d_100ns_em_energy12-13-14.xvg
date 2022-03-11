@@ -1,0 +1,34 @@
+# This file was created Fri Mar 11 12:30:17 2022
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer-100mMNaCl/gromacs
+# Command line:
+#   gmx_mpi energy -f 7D35d_100ns_em.edr -o 7D35d_100ns_em_energy12-13-14.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Glycine aRginine prOline Methionine Alanine Cystine Serine
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol), (bar), ()"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+@ s1 legend "Pressure"
+@ s2 legend "Constr. rmsd"
+    0.000000  -472428.656250  -2282.193848    0.000002
+    1.000000  -473482.156250  -2516.820068    0.000002
+    2.000000  -473621.750000  -3162.115479    0.000002
+    4.000000  -474539.656250  -2916.519531    0.000002
+    6.000000  -474730.125000  -3102.340088    0.000002
+    7.000000  -474818.781250  -2977.422607    0.000002
+    8.000000  -474969.468750  -3239.379639    0.000002
+   10.000000  -475232.500000  -3134.948242    0.000002

@@ -1,0 +1,34 @@
+# This file was created Fri Mar 11 12:30:17 2022
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer-100mMNaCl/gromacs
+# Command line:
+#   gmx_mpi energy -f 7D35d_100ns_em.edr -o 7D35d_100ns_em_energy1-3-4.xvg
+# gmx energy is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Bond"
+@ s1 legend "Proper Dih."
+@ s2 legend "Improper Dih."
+    0.000000  862.367798  8316.851562   86.282295
+    1.000000  458.932220  8269.550781   94.306465
+    2.000000  1277.771240  8206.523438  156.770782
+    4.000000  581.002441  8190.819336  144.163254
+    6.000000  517.681274  8186.934082  135.142593
+    7.000000  661.408569  8174.148926  126.729141
+    8.000000  595.312805  8173.432617  128.707947
+   10.000000  470.425415  8166.927246  125.993156

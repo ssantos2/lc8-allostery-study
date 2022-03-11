@@ -1,4 +1,4 @@
-#!/bin/bash 7D35d_100ns_em.slurm
+#!/bin/bash
 #SBATCH --job-name=7D35d_100ns_em_energy12-13-14
 #SBATCH --output=7D35d_100ns_em_energy12-13-14.errout
 #SBATCH --partition=gpu

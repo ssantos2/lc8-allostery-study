@@ -1,0 +1,72 @@
+/var/spool/slurmd/job18243673/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Fri Mar 11 12:30:17 PST 2022
+Running on hosts: exanode-8-6
+Running on 1 nodes.
+Running 1 tasks.
+Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer-100mMNaCl/gromacs
+                      :-) GROMACS - gmx energy, 2020.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx energy, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer-100mMNaCl/gromacs
+Command line:
+  gmx_mpi energy -f 7D35d_100ns_em.edr -o 7D35d_100ns_em_energy1-3-4.xvg
+
+Opened 7D35d_100ns_em.edr as single precision energy file
+
+Select the terms you want from the following list by
+selecting either (part of) the name or the number or a combination.
+End your selection with an empty line or a zero.
+-------------------------------------------------------------------
+  1  Bond             2  U-B              3  Proper-Dih.      4  Improper-Dih. 
+  5  CMAP-Dih.        6  LJ-14            7  Coulomb-14       8  LJ-(SR)       
+  9  Coulomb-(SR)    10  Coul.-recip.    11  Position-Rest.  12  Potential     
+ 13  Pressure        14  Constr.-rmsd    15  Vir-XX          16  Vir-XY        
+ 17  Vir-XZ          18  Vir-YX          19  Vir-YY          20  Vir-YZ        
+ 21  Vir-ZX          22  Vir-ZY          23  Vir-ZZ          24  Pres-XX       
+ 25  Pres-XY         26  Pres-XZ         27  Pres-YX         28  Pres-YY       
+ 29  Pres-YZ         30  Pres-ZX         31  Pres-ZY         32  Pres-ZZ       
+ 33  #Surf*SurfTen   34  T-rest        
+
+String '\n' does not match anything
+Reading energy frame      0 time    0.000         Reading energy frame      1 time    1.000         Reading energy frame      2 time    2.000         Reading energy frame      3 time    4.000         Reading energy frame      4 time    6.000         Reading energy frame      5 time    7.000         Reading energy frame      6 time    8.000         Reading energy frame      7 time   10.000         Last energy frame read 7 time   10.000         
+
+GROMACS reminds you: "Shake Yourself" (YES)
+
+
+Statistics over 11 steps [ 0.0000 through 10.0000 ps ], 3 data sets
+All statistics are over 8 points (frames)
+
+Energy                      Average   Err.Est.       RMSD  Tot-Drift
+-------------------------------------------------------------------------------
+Bond                        678.113         80    256.666   -360.569  (kJ/mol)
+Proper Dih.                 8210.65         23    50.4355   -129.764  (kJ/mol)
+Improper Dih.               124.762        9.9    22.1865    25.8214  (kJ/mol)
+Finished creating 7D35d_100ns_em_energy1-3-4.xvg

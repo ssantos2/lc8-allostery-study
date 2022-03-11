@@ -1,0 +1,34 @@
+# This file was created Fri Mar 11 12:30:47 2022
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-dimer-100mMNaCl/gromacs
+# Command line:
+#   gmx_mpi energy -f 7D35d_100ns_em.edr -o 7D35d_100ns_em_energy16-17-18.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Vir-XY"
+@ s1 legend "Vir-XZ"
+@ s2 legend "Vir-YX"
+    0.000000  -2148.517578  3891.238770  -2148.441895
+    1.000000  -2123.268555  3890.277832  -2123.214844
+    2.000000  -2021.536133  3838.924316  -2021.620117
+    4.000000  -2037.126953  3328.141846  -2037.134766
+    6.000000  -2002.946289  3742.928711  -2002.784180
+    7.000000  -2002.935059  3389.900879  -2003.130371
+    8.000000  -1954.846680  3865.492432  -1954.956543
+   10.000000  -1963.123535  3596.106934  -1963.191406
