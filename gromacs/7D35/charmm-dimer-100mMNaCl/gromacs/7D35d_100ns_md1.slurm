@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=7D35d_100ns_md
-#SBATCH --output=7D35d_100ns_md.errout
+#SBATCH --job-name=7D35d_100ns_md1
+#SBATCH --output=7D35d_100ns_md1.errout
 #SBATCH --partition=gpu
 #SBATCH --nodes 1
 #SBATCH --tasks 2
@@ -24,5 +24,5 @@ echo "Running on $SLURM_NNODES nodes."
 echo "Running $SLURM_NTASKS tasks."
 echo "Current working directory is `pwd`"
 
-srun --mpi=pmi2 gmx_mpi grompp -f 7D35d_100ns_md.mdp -c 7D35d_100ns_em.gro -r 7D35d_100ns_em.gro -t 7D35d_100ns_eq.cpt -p topol.top -o 7D35d_100ns_md.tpr
-srun --mpi=pmi2 -N 1 -n 1 -c 6  gmx_mpi mdrun -deffnm 7D35d_100ns_md -v -ntomp 1  -cpt 60  -maxh 24
+srun --mpi=pmi2 gmx_mpi grompp -f 7D35d_100ns_md.mdp -c 7D35d_100ns_em.gro -r 7D35d_100ns_em.gro -t 7D35d_100ns_eq.cpt -p topol.top -o 7D35d_100ns_md1.tpr
+srun --mpi=pmi2 -N 1 -n 1 -c 6  gmx_mpi mdrun -deffnm 7D35d_100ns_md1 -v -ntomp 1  -cpt 60  -maxh 48
