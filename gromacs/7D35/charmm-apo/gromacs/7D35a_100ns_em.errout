@@ -1,0 +1,177 @@
+/var/spool/slurmd/job18463952/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Tue Mar 29 14:34:07 PDT 2022
+Running on hosts: exanode-7-20
+Running on 1 nodes.
+Running 1 tasks.
+Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
+                      :-) GROMACS - gmx grompp, 2020.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
+Command line:
+  gmx_mpi grompp -f 7D35a_100ns_em.mdp -c step3_input.gro -r step3_input.gro -p topol.top -o 7D35a_100ns_em.tpr -v
+
+checking input for internal consistency...
+Setting the LD random seed to 1911949650
+Generated 900 of the 903 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 528 of the 903 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'PROA'
+Excluding 3 bonded neighbours molecule type 'PROB'
+Excluding 1 bonded neighbours molecule type 'SOD'
+Excluding 1 bonded neighbours molecule type 'CLA'
+Excluding 2 bonded neighbours molecule type 'TIP3'
+processing coordinates...
+double-checking input for internal consistency...
+Reading position restraint coords from step3_input.gro
+renumbering atomtypes...
+converting bonded parameters...
+initialising group options...
+processing index file...
+Making dummy/rest group for T-Coupling containing 30628 elements
+Making dummy/rest group for Acceleration containing 30628 elements
+Making dummy/rest group for Freeze containing 30628 elements
+Making dummy/rest group for Energy Mon. containing 30628 elements
+Making dummy/rest group for VCM containing 30628 elements
+Number of degrees of freedom in T-Coupling group rest is 62707.00
+Making dummy/rest group for User1 containing 30628 elements
+Making dummy/rest group for User2 containing 30628 elements
+Making dummy/rest group for Compressed X containing 30628 elements
+Making dummy/rest group for Or. Res. Fit containing 30628 elements
+Making dummy/rest group for QMMM containing 30628 elements
+T-Coupling       has 1 element(s): rest
+Energy Mon.      has 1 element(s): rest
+Acceleration     has 1 element(s): rest
+Freeze           has 1 element(s): rest
+User1            has 1 element(s): rest
+User2            has 1 element(s): rest
+VCM              has 1 element(s): rest
+Compressed X     has 1 element(s): rest
+Or. Res. Fit     has 1 element(s): rest
+QMMM             has 1 element(s): rest
+
+NOTE 1 [file 7D35a_100ns_em.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+Estimate for the relative computational load of the PME mesh part: 0.14
+writing run input file...
+
+There was 1 note
+
+GROMACS reminds you: "They never asked me to go back over (my calculations) because when I did it, I had done my best, and it was right." (Kathrine Jonson (legendary NASA mathematician))
+
+processing topology...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Analysing residue names:
+There are:   172    Protein residues
+There are:  9294      Other residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 60x60x60, spacing 0.115 0.115 0.115
+This run will generate roughly 197 Mb of data
+Finished creating 7D35a_100ns_em.tpr
+                      :-) GROMACS - gmx mdrun, 2020.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
+Command line:
+  gmx_mpi mdrun -deffnm 7D35a_100ns_em -v -ntomp 1 -cpt 60 -maxh 24
+
+Compiled SIMD: AVX_256, but for this host/run AVX2_256 might be better (see
+log).
+Reading file 7D35a_100ns_em.tpr, VERSION 2020.2 (single precision)
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =     50000000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -4.49239e+05 Fmax= 7.28495e+03, atom= 2813
+Step=    1, Dmax= 1.0e-02 nm, Epot= -4.50234e+05 Fmax= 2.24368e+03, atom= 1395
+Step=    2, Dmax= 1.2e-02 nm, Epot= -4.50158e+05 Fmax= 5.93937e+03, atom= 1612Step=    3, Dmax= 6.0e-03 nm, Epot= -4.50724e+05 Fmax= 2.43924e+03, atom= 1612
+Step=    4, Dmax= 7.2e-03 nm, Epot= -4.50098e+05 Fmax= 6.77699e+03, atom= 1612Step=    5, Dmax= 3.6e-03 nm, Epot= -4.51000e+05 Fmax= 2.18012e+03, atom= 1612
+Step=    6, Dmax= 4.3e-03 nm, Epot= -4.51103e+05 Fmax= 3.42106e+03, atom= 1612
+Step=    7, Dmax= 5.2e-03 nm, Epot= -4.51308e+05 Fmax= 3.25918e+03, atom= 1612
+Step=    8, Dmax= 6.2e-03 nm, Epot= -4.51258e+05 Fmax= 4.84000e+03, atom= 1612Step=    9, Dmax= 3.1e-03 nm, Epot= -4.51623e+05 Fmax= 9.07784e+02, atom= 1395
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 10 steps
+Potential Energy  = -4.5162288e+05
+Maximum force     =  9.0778400e+02 on atom 1395
+Norm of force     =  6.4731065e+01
+
+GROMACS reminds you: "My Brothers are Protons (Protons!), My Sisters are Neurons (Neurons)" (Gogol Bordello)
+
