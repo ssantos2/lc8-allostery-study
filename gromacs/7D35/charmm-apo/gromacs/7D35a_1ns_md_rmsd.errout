@@ -1,0 +1,85 @@
+/var/spool/slurmd/job18475901/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Wed Mar 30 15:21:15 PDT 2022
+Running on hosts: exanode-7-20
+Running on 1 nodes.
+Running 1 tasks.
+Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
+                       :-) GROMACS - gmx rms, 2020.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx rms, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
+Command line:
+  gmx_mpi rms -s 7D35a_1ns_md.tpr -f 7D35a_1ns_md_noPBC.xtc -o 7D35a_1ns_md_rmsd.xvg -tu ns
+
+Reading file 7D35a_1ns_md.tpr, VERSION 2020.2 (single precision)
+Reading file 7D35a_1ns_md.tpr, VERSION 2020.2 (single precision)
+Select group for least squares fit
+Group     0 (         System) has 30628 elements
+Group     1 (        Protein) has  2814 elements
+Group     2 (      Protein-H) has  1420 elements
+Group     3 (        C-alpha) has   172 elements
+Group     4 (       Backbone) has   516 elements
+Group     5 (      MainChain) has   686 elements
+Group     6 (   MainChain+Cb) has   852 elements
+Group     7 (    MainChain+H) has   854 elements
+Group     8 (      SideChain) has  1960 elements
+Group     9 (    SideChain-H) has   734 elements
+Group    10 (    Prot-Masses) has  2814 elements
+Group    11 (    non-Protein) has 27814 elements
+Group    12 (          Other) has 27814 elements
+Group    13 (            SOD) has    17 elements
+Group    14 (            CLA) has    17 elements
+Group    15 (           TIP3) has 27780 elements
+Select a group: Select group for RMSD calculation
+Group     0 (         System) has 30628 elements
+Group     1 (        Protein) has  2814 elements
+Group     2 (      Protein-H) has  1420 elements
+Group     3 (        C-alpha) has   172 elements
+Group     4 (       Backbone) has   516 elements
+Group     5 (      MainChain) has   686 elements
+Group     6 (   MainChain+Cb) has   852 elements
+Group     7 (    MainChain+H) has   854 elements
+Group     8 (      SideChain) has  1960 elements
+Group     9 (    SideChain-H) has   734 elements
+Group    10 (    Prot-Masses) has  2814 elements
+Group    11 (    non-Protein) has 27814 elements
+Group    12 (          Other) has 27814 elements
+Group    13 (            SOD) has    17 elements
+Group    14 (            CLA) has    17 elements
+Group    15 (           TIP3) has 27780 elements
+Select a group: Select a group: Reading frame       0 time    0.000   Reading frame       1 time    0.100   Reading frame       2 time    0.200   Reading frame       3 time    0.300   Reading frame       4 time    0.400   Reading frame       5 time    0.500   Reading frame       6 time    0.600   Reading frame       7 time    0.700   Reading frame       8 time    0.800   Reading frame       9 time    0.900   Reading frame      10 time    1.000   Last frame         10 time    1.000   
+
+GROMACS reminds you: "Science may never come up with a better office communication system than the coffee break." (Earl Wilson)
+
+Selected 4: 'Backbone'
+Error: No such group '\n'
+Selected 4: 'Backbone'
+Finished creating 7D35a_1ns_md_rmsd.xvg

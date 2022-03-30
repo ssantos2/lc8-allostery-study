@@ -1,0 +1,29 @@
+# This file was created Wed Mar 30 15:21:16 2022
+# Created by:
+#                       :-) GROMACS - gmx rms, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
+# Command line:
+#   gmx_mpi rms -s 7D35a_1ns_md.tpr -f 7D35a_1ns_md_noPBC.xtc -o 7D35a_1ns_md_rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0006945
+   0.1000000    0.0635169
+   0.2000000    0.0786407
+   0.3000000    0.0757866
+   0.4000000    0.0858966
+   0.5000000    0.1114264
+   0.6000000    0.1250691
+   0.7000000    0.0942022
+   0.8000000    0.0945512
+   0.9000000    0.1137913
+   1.0000000    0.1167258
