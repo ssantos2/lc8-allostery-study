@@ -1,0 +1,33 @@
+# This file was created Tue Mar 29 15:07:52 2022
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.2 (-:
+# 
+# Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+# Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+# Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
+# Command line:
+#   gmx_mpi energy -f 7D35a_100ns_em.edr -o 7D35a_100ns_em_energy16-17-18.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gnomes, ROck Monsters And Chili Sauce
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Vir-XY"
+@ s1 legend "Vir-XZ"
+@ s2 legend "Vir-YX"
+    0.000000  -3320.243164  3265.569336  -3320.352539
+    1.000000  -3305.900391  3391.958984  -3305.927734
+    3.000000  -3282.759766  3197.821533  -3282.789062
+    5.000000  -3266.348633  3097.321777  -3266.372070
+    6.000000  -3249.827148  3235.339355  -3249.756836
+    7.000000  -3226.164062  3061.779297  -3226.082031
+    9.000000  -3225.699219  3151.226562  -3225.664062
