@@ -24,6 +24,6 @@ echo "Running on $SLURM_NNODES nodes."
 echo "Running $SLURM_NTASKS tasks."
 echo "Current working directory is `pwd`"
 
-echo "1 \n 0 \n" |srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi trjconv -s 7D35a_100ns_md_noPBC.tpr -f 7D35a_100ns_md_noPBC.xtc -o 7D35a_100ns_md_noPBC.xtc -pbc mol -center
+echo "1 \n 0 \n" |srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi trjconv -s 7D35a_100ns_md.tpr -f 7D35a_100ns_md.xtc -o 7D35a_100ns_md_noPBC.xtc -pbc mol -center
 echo "Finished creating 7D35a_100ns_md_noPBC.xvg"
 
