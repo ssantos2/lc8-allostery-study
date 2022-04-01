@@ -1,6 +1,6 @@
-/var/spool/slurmd/job18470141/slurm_script: line 19: ./run.sh: No such file or directory
-Starting at Wed Mar 30 09:09:47 PDT 2022
-Running on hosts: exanode-8-18
+/var/spool/slurmd/job18489502/slurm_script: line 19: ./run.sh: No such file or directory
+Starting at Thu Mar 31 18:49:26 PDT 2022
+Running on hosts: exanode-7-17
 Running on 1 nodes.
 Running 1 tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs
@@ -59,17 +59,17 @@ End your selection with an empty line or a zero.
 String '\n' does not match anything
 
 Back Off! I just backed up 7D35a_100ns_eq_energy1-3-4.xvg to ./#7D35a_100ns_eq_energy1-3-4.xvg.1#
-Reading energy frame      0 time    0.000         Reading energy frame      1 time    0.400         Reading energy frame      2 time    0.800         Reading energy frame      3 time    1.200         Reading energy frame      4 time    1.600         Reading energy frame      5 time    2.000         Reading energy frame      6 time    2.400         Reading energy frame      7 time    2.800         Reading energy frame      8 time    3.200         Reading energy frame      9 time    3.600         Reading energy frame     10 time    4.000         Reading energy frame     11 time    4.400         Reading energy frame     12 time    4.800         Reading energy frame     13 time    5.200         Reading energy frame     14 time    5.600         Reading energy frame     15 time    6.000         Reading energy frame     16 time    6.400         Reading energy frame     17 time    6.800         Reading energy frame     18 time    7.200         Reading energy frame     19 time    7.600         Reading energy frame     20 time    8.000         Reading energy frame     30 time   12.000         Reading energy frame     40 time   16.000         Reading energy frame     50 time   20.000         Reading energy frame     60 time   24.000         Reading energy frame     70 time   28.000         Reading energy frame     80 time   32.000         Reading energy frame     90 time   36.000         Reading energy frame    100 time   40.000         Reading energy frame    110 time   44.000         Reading energy frame    120 time   48.000         Reading energy frame    130 time   52.000         Reading energy frame    140 time   56.000         Reading energy frame    150 time   60.000         Reading energy frame    160 time   64.000         Reading energy frame    170 time   68.000         Reading energy frame    180 time   72.000         Reading energy frame    190 time   76.000         Reading energy frame    200 time   80.000         Reading energy frame    300 time  120.000         Reading energy frame    400 time  160.000         Reading energy frame    500 time  200.000         Reading energy frame    600 time  240.000         Reading energy frame    700 time  280.000         Reading energy frame    800 time  320.000         Reading energy frame    900 time  360.000         Reading energy frame   1000 time  400.000         Reading energy frame   1100 time  440.000         Reading energy frame   1200 time  480.000         Reading energy frame   1300 time  520.000         Reading energy frame   1400 time  560.000         Reading energy frame   1500 time  600.000         Reading energy frame   1600 time  640.000         Reading energy frame   1700 time  680.000         Reading energy frame   1800 time  720.000         Reading energy frame   1900 time  760.000         Reading energy frame   2000 time  800.000         Last energy frame read 2389 time  955.336         
+Reading energy frame      0 time    0.000         Reading energy frame      1 time    0.200         Reading energy frame      2 time    0.400         Reading energy frame      3 time    0.600         Reading energy frame      4 time    0.800         Reading energy frame      5 time    1.000         Reading energy frame      6 time    1.200         Reading energy frame      7 time    1.400         Reading energy frame      8 time    1.600         Reading energy frame      9 time    1.800         Reading energy frame     10 time    2.000         Reading energy frame     11 time    2.200         Reading energy frame     12 time    2.400         Reading energy frame     13 time    2.600         Reading energy frame     14 time    2.800         Reading energy frame     15 time    3.000         Reading energy frame     16 time    3.200         Reading energy frame     17 time    3.400         Reading energy frame     18 time    3.600         Reading energy frame     19 time    3.800         Reading energy frame     20 time    4.000         Reading energy frame     30 time    6.000         Reading energy frame     40 time    8.000         Last energy frame read 47 time    9.400         
 
-GROMACS reminds you: "I Ripped the Cord Right Out Of the Phone" (Capt. Beefheart)
+GROMACS reminds you: "If your experiment needs a statistician, you need a better experiment." (Ernest Rutherford)
 
 
-Statistics over 2388342 steps [ 0.0000 through 955.3364 ps ], 3 data sets
-All statistics are over 23884 points
+Statistics over 47001 steps [ 0.0000 through 9.4000 ps ], 3 data sets
+All statistics are over 471 points
 
 Energy                      Average   Err.Est.       RMSD  Tot-Drift
 -------------------------------------------------------------------------------
-Bond                        2260.25        1.9    83.8061    1.24169  (kJ/mol)
-Proper Dih.                  7576.9          4    62.1844   -15.6208  (kJ/mol)
-Improper Dih.               375.419       0.33    27.8355  -0.677335  (kJ/mol)
+Bond                         2182.5         34    235.993    240.967  (kJ/mol)
+Proper Dih.                 7723.97         41    158.769   -230.687  (kJ/mol)
+Improper Dih.               373.797        2.3    47.4992    15.6147  (kJ/mol)
 Finished creating 7D35a_100ns_eq_energy1-3-4.xvg
