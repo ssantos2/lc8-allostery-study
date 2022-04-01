@@ -24,7 +24,7 @@ echo "Running on $SLURM_NNODES nodes."
 echo "Running $SLURM_NTASKS tasks."
 echo "Current working directory is `pwd`"
 
-srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi grompp -f 7D35a_100ns_em.mdp -c step3_input.gro -r step3_input.gro -p topol.top -o 7D35a_100ns_em.tpr -v 
+srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi grompp -f 7D35a_10ps_em.mdp -c step3_input.gro -r step3_input.gro -p topol.top -o 7D35a_100ns_em.tpr -v 
 echo "Finished creating 7D35a_100ns_em.tpr"
 
 srun --mpi=pmi2 -N 1 -n 1 -c 6 gmx_mpi mdrun -deffnm 7D35a_100ns_em -v -ntomp 1  -cpt 60  -maxh 24
