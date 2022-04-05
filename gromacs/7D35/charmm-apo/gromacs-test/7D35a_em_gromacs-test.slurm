@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --job-name=7D35a_100ns_em-test
+#SBATCH --output=7D35a_100ns_em-test.errout
+#SBATCH --partition=gpu
+#SBATCH --nodes 1
+#SBATCH --ntasks 1
+#SBATCH --cpus-per-task 1
+#SBATCH --gres gpu:1
+#SBATCH --exclude exanode-8-18
+#SBATCH --time=1:00:0
+
+module use /home/exacloud/software/modules/
+
+module load openmpi/3.1.6
+module load gromacs/2020.2+cuda
+
+./run.sh
+
+echo "Starting at `date`"
+echo "Running on hosts: $SLURM_JOB_NODELIST"
+echo "Running on $SLURM_JOB_NUM_NODES nodes."
+echo "Running $SLURM_STEP_NUM_TASKS tasks."
+echo "Current working directory is `pwd`"
+echo "JobID : $SLURM_JOB_ID"
+
+srun gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p 7D35a_topol.top -o 7D35a_em_gromacs-test.tpr -v 
+mpirun -np 2 gmx_mpi mdrun -ntomp 2 -npme 1 -ntomp_pme 1 
+echo "Finished 7D35a_em_gromacs-test"
