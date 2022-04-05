@@ -1,10 +1,10 @@
-/var/spool/slurmd/job18538496/slurm_script: line 17: ./run.sh: No such file or directory
-Starting at Tue Apr  5 15:34:52 PDT 2022
-Running on hosts: exanode-8-13
+/var/spool/slurmd/job18538546/slurm_script: line 17: ./run.sh: No such file or directory
+Starting at Tue Apr  5 16:07:51 PDT 2022
+Running on hosts: exanode-7-23
 Running on 1 nodes.
-Running 1 tasks.
+Running  tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
-JobID : 18538496
+JobID : 18538546
                       :-) GROMACS - gmx grompp, 2020.2 (-:
 
                             GROMACS is written by:
@@ -40,13 +40,13 @@ Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D3
 Command line:
   gmx_mpi grompp -f 7D35a_em_gromacs_test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs_test.tpr -n index.ndx -maxwarn -1
 
-Setting the LD random seed to -758593188
-Setting the LD random seed to -928996537
-Generated 900 of the 903 non-bonded parameter combinations
-Generating 1-4 interactions: fudge = 1
+Setting the LD random seed to 1280569851
+Setting the LD random seed to -156372384
 Generated 900 of the 903 non-bonded parameter combinations
 Generating 1-4 interactions: fudge = 1
 Generated 528 of the 903 1-4 parameter combinations
+Generated 900 of the 903 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
 Generated 528 of the 903 1-4 parameter combinations
 Excluding 3 bonded neighbours molecule type 'PROA'
 Excluding 3 bonded neighbours molecule type 'PROA'
@@ -83,11 +83,11 @@ Estimate for the relative computational load of the PME mesh part: 0.14
 
 There was 1 note
 
-Back Off! I just backed up 7D35a_em_gromacs_test.tpr to ./#7D35a_em_gromacs_test.tpr.1#
+Back Off! I just backed up 7D35a_em_gromacs_test.tpr to ./#7D35a_em_gromacs_test.tpr.2#
 
-Sorry couldn't backup 7D35a_em_gromacs_test.tpr to ./#7D35a_em_gromacs_test.tpr.1#
+Sorry couldn't backup 7D35a_em_gromacs_test.tpr to ./#7D35a_em_gromacs_test.tpr.2#
 
-GROMACS reminds you: "In the End Science Comes Down to Praying" (P. v.d. Berg)
+GROMACS reminds you: "I Want to Know Right Now" (Meatloaf)
 
 turning H bonds into constraints...
 turning H bonds into constraints...
@@ -105,5 +105,75 @@ turning H bonds into constraints...
 Calculating fourier grid dimensions for X Y Z
 Using a fourier grid of 60x60x60, spacing 0.115 0.115 0.115
 This run will generate roughly 2 Mb of data
-srun: error: Invalid numeric value "p" for --ntasks.
+                      :-) GROMACS - gmx mdrun, 2020.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
+Command line:
+  gmx_mpi mdrun -deffnm 7D35a_em_gromacs_test -ntomp 2 -npme 1 -ntomp_pme 1 -v
+
+Compiled SIMD: AVX_256, but for this host/run AVX2_256 might be better (see
+log).
+Reading file 7D35a_em_gromacs_test.tpr, VERSION 2020.2 (single precision)
+On host exanode-7-23 1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 2 ranks on this node:
+  PP:0,none
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 2 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 2 OpenMP threads per MPI process
+Using 1 OpenMP thread per MPI process for PME
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =         5000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -4.49239e+05 Fmax= 7.28495e+03, atom= 2813
+Step=    1, Dmax= 1.0e-02 nm, Epot= -4.50234e+05 Fmax= 2.24368e+03, atom= 1395
+Step=    2, Dmax= 1.2e-02 nm, Epot= -4.50158e+05 Fmax= 5.93937e+03, atom= 1612Step=    3, Dmax= 6.0e-03 nm, Epot= -4.50722e+05 Fmax= 2.43924e+03, atom= 1612
+Step=    4, Dmax= 7.2e-03 nm, Epot= -4.50099e+05 Fmax= 6.77699e+03, atom= 1612Step=    5, Dmax= 3.6e-03 nm, Epot= -4.50999e+05 Fmax= 2.18012e+03, atom= 1612
+Step=    6, Dmax= 4.3e-03 nm, Epot= -4.51103e+05 Fmax= 3.42106e+03, atom= 1612
+Step=    7, Dmax= 5.2e-03 nm, Epot= -4.51307e+05 Fmax= 3.25918e+03, atom= 1612
+Step=    8, Dmax= 6.2e-03 nm, Epot= -4.51258e+05 Fmax= 4.84000e+03, atom= 1612Step=    9, Dmax= 3.1e-03 nm, Epot= -4.51624e+05 Fmax= 9.07784e+02, atom= 1395
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 10 steps
+Potential Energy  = -4.5162397e+05
+Maximum force     =  9.0778406e+02 on atom 1395
+Norm of force     =  6.4730931e+01
+
+GROMACS reminds you: "Gabba Gabba Hey!" (The Ramones)
+
 Finished 7D35a_em_gromacs_test

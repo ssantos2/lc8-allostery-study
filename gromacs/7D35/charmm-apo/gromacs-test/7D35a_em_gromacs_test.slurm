@@ -24,5 +24,5 @@ echo "Current working directory is `pwd`"
 echo "JobID : $SLURM_JOB_ID"
 
 srun --mpi=pmi2 gmx_mpi grompp -f 7D35a_em_gromacs_test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs_test.tpr -n index.ndx -maxwarn -1  
-srun --mpi=pmi2 -np 2 gmx_mpi mdrun -deffnm 7D35a_em_gromacs_test -ntomp 2 -npme 1 -ntomp_pme 1 -v 
+mpirun -np 2 gmx_mpi mdrun -deffnm 7D35a_em_gromacs_test -ntomp 2 -npme 1 -ntomp_pme 1 -v 
 echo "Finished 7D35a_em_gromacs_test"
