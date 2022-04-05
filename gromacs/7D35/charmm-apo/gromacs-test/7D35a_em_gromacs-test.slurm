@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=7D35a_100ns_em-test
-#SBATCH --output=7D35a_100ns_em-test.errout
+#SBATCH --job-name=7D35a_em_gromacs-test
+#SBATCH --output=7D35a_em_gromacs-test.errout
 #SBATCH --partition=gpu
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
