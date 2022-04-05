@@ -1,10 +1,10 @@
-/var/spool/slurmd/job18538365/slurm_script: line 17: ./run.sh: No such file or directory
-Starting at Tue Apr  5 14:33:49 PDT 2022
-Running on hosts: exanode-8-16
+/var/spool/slurmd/job18538496/slurm_script: line 17: ./run.sh: No such file or directory
+Starting at Tue Apr  5 15:34:52 PDT 2022
+Running on hosts: exanode-8-13
 Running on 1 nodes.
-Running  tasks.
+Running 1 tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
-JobID : 18538365
+JobID : 18538496
                       :-) GROMACS - gmx grompp, 2020.2 (-:
 
                             GROMACS is written by:
@@ -38,22 +38,43 @@ Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gc
 Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
 Command line:
-  gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -n index.ndx -maxwarn -1
+  gmx_mpi grompp -f 7D35a_em_gromacs_test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs_test.tpr -n index.ndx -maxwarn -1
 
-Setting the LD random seed to 918222005
+Setting the LD random seed to -758593188
+Setting the LD random seed to -928996537
+Generated 900 of the 903 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
 Generated 900 of the 903 non-bonded parameter combinations
 Generating 1-4 interactions: fudge = 1
 Generated 528 of the 903 1-4 parameter combinations
+Generated 528 of the 903 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'PROA'
 Excluding 3 bonded neighbours molecule type 'PROA'
 Excluding 3 bonded neighbours molecule type 'PROB'
+Excluding 3 bonded neighbours molecule type 'PROB'
+Excluding 1 bonded neighbours molecule type 'SOD'
+Excluding 1 bonded neighbours molecule type 'CLA'
+Excluding 2 bonded neighbours molecule type 'TIP3'
 Excluding 1 bonded neighbours molecule type 'SOD'
 Excluding 1 bonded neighbours molecule type 'CLA'
 Excluding 2 bonded neighbours molecule type 'TIP3'
 Warning: file does not end with a newline, last line:
 30616 30617 30618 30619 30620 30621 30622 30623 30624 30625 30626 30627 30628 
+Warning: file does not end with a newline, last line:
+30616 30617 30618 30619 30620 30621 30622 30623 30624 30625 30626 30627 30628 
 Number of degrees of freedom in T-Coupling group rest is 62707.00
 
-NOTE 1 [file 7D35a_em_gromacs-test.mdp]:
+NOTE 1 [file 7D35a_em_gromacs_test.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+Estimate for the relative computational load of the PME mesh part: 0.14
+
+There was 1 note
+Number of degrees of freedom in T-Coupling group rest is 62707.00
+
+NOTE 1 [file 7D35a_em_gromacs_test.mdp]:
   Removing center of mass motion in the presence of position restraints
   might cause artifacts. When you are using position restraints to
   equilibrate a macro-molecule, the artifacts are usually negligible.
@@ -62,9 +83,11 @@ Estimate for the relative computational load of the PME mesh part: 0.14
 
 There was 1 note
 
-Back Off! I just backed up 7D35a_em_gromacs-test.tpr to ./#7D35a_em_gromacs-test.tpr.1#
+Back Off! I just backed up 7D35a_em_gromacs_test.tpr to ./#7D35a_em_gromacs_test.tpr.1#
 
-GROMACS reminds you: "It doesn't pay to make predictions" (Crowded House)
+Sorry couldn't backup 7D35a_em_gromacs_test.tpr to ./#7D35a_em_gromacs_test.tpr.1#
+
+GROMACS reminds you: "In the End Science Comes Down to Praying" (P. v.d. Berg)
 
 turning H bonds into constraints...
 turning H bonds into constraints...
@@ -74,5 +97,13 @@ turning H bonds into constraints...
 Calculating fourier grid dimensions for X Y Z
 Using a fourier grid of 60x60x60, spacing 0.115 0.115 0.115
 This run will generate roughly 2 Mb of data
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 60x60x60, spacing 0.115 0.115 0.115
+This run will generate roughly 2 Mb of data
 srun: error: Invalid numeric value "p" for --ntasks.
-Finished 7D35a_em_gromacs-test
+Finished 7D35a_em_gromacs_test

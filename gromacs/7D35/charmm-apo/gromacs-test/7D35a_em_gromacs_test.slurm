@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=7D35a_em_gromacs-test
-#SBATCH --output=7D35a_em_gromacs-test.errout
+#SBATCH --job-name=7D35a_em_gromacs_test
+#SBATCH --output=7D35a_em_gromacs_test.errout
 #SBATCH --partition=gpu
 #SBATCH --nodes 1
-#SBATCH --ntasks 1
+#SBATCH --ntasks 2
 #SBATCH --cpus-per-task 1
 #SBATCH --gres gpu:1
 #SBATCH --exclude exanode-8-18
@@ -23,6 +23,6 @@ echo "Running $SLURM_STEP_NUM_TASKS tasks."
 echo "Current working directory is `pwd`"
 echo "JobID : $SLURM_JOB_ID"
 
-srun gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -n index.ndx -maxwarn -1  
-srun -np 2 gmx_mpi mdrun -deffnm 7D35a_em_gromacs-test -ntomp 2 -npme 1 -ntomp_pme 1 -v 
-echo "Finished 7D35a_em_gromacs-test"
+srun --mpi=pmi2 gmx_mpi grompp -f 7D35a_em_gromacs_test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs_test.tpr -n index.ndx -maxwarn -1  
+srun --mpi=pmi2 -np 2 gmx_mpi mdrun -deffnm 7D35a_em_gromacs_test -ntomp 2 -npme 1 -ntomp_pme 1 -v 
+echo "Finished 7D35a_em_gromacs_test"

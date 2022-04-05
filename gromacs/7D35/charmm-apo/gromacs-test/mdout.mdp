@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (5801)
-;	On host: exanode-8-16
-;	At date: Tue Apr  5 14:33:50 2022
+;	On host: exanode-8-13
+;	At date: Tue Apr  5 15:34:54 2022
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2020.2 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 ;	Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
 ;	Command line:
-;	  gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -n index.ndx -maxwarn -1
+;	  gmx_mpi grompp -f 7D35a_em_gromacs_test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs_test.tpr -n index.ndx -maxwarn -1
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
