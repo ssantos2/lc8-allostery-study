@@ -1,10 +1,10 @@
-/var/spool/slurmd/job18537730/slurm_script: line 17: ./run.sh: No such file or directory
-Starting at Tue Apr  5 13:27:44 PDT 2022
+/var/spool/slurmd/job18537738/slurm_script: line 17: ./run.sh: No such file or directory
+Starting at Tue Apr  5 13:38:59 PDT 2022
 Running on hosts: exanode-8-16
 Running on 1 nodes.
 Running  tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
-JobID : 18537730
+JobID : 18537738
                       :-) GROMACS - gmx grompp, 2020.2 (-:
 
                             GROMACS is written by:
@@ -40,7 +40,7 @@ Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D3
 Command line:
   gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -n index.ndx -maxwarn 1
 
-Setting the LD random seed to 1402117885
+Setting the LD random seed to 960910341
 Generated 900 of the 903 non-bonded parameter combinations
 Generating 1-4 interactions: fudge = 1
 Generated 528 of the 903 1-4 parameter combinations
@@ -62,7 +62,9 @@ Estimate for the relative computational load of the PME mesh part: 0.14
 
 There was 1 note
 
-GROMACS reminds you: "I'm a Wishbone and I'm Breaking" (Pixies)
+Back Off! I just backed up 7D35a_em_gromacs-test.tpr to ./#7D35a_em_gromacs-test.tpr.1#
+
+GROMACS reminds you: "They Paint Their Faces So Differently From Ours" (Gogol Bordello)
 
 turning H bonds into constraints...
 turning H bonds into constraints...
