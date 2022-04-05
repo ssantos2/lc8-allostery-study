@@ -1,10 +1,10 @@
-/var/spool/slurmd/job18537738/slurm_script: line 17: ./run.sh: No such file or directory
-Starting at Tue Apr  5 13:38:59 PDT 2022
+/var/spool/slurmd/job18538365/slurm_script: line 17: ./run.sh: No such file or directory
+Starting at Tue Apr  5 14:33:49 PDT 2022
 Running on hosts: exanode-8-16
 Running on 1 nodes.
 Running  tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
-JobID : 18537738
+JobID : 18538365
                       :-) GROMACS - gmx grompp, 2020.2 (-:
 
                             GROMACS is written by:
@@ -38,9 +38,9 @@ Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gc
 Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
 Command line:
-  gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -n index.ndx -maxwarn 1
+  gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -n index.ndx -maxwarn -1
 
-Setting the LD random seed to 960910341
+Setting the LD random seed to 918222005
 Generated 900 of the 903 non-bonded parameter combinations
 Generating 1-4 interactions: fudge = 1
 Generated 528 of the 903 1-4 parameter combinations
@@ -64,7 +64,7 @@ There was 1 note
 
 Back Off! I just backed up 7D35a_em_gromacs-test.tpr to ./#7D35a_em_gromacs-test.tpr.1#
 
-GROMACS reminds you: "They Paint Their Faces So Differently From Ours" (Gogol Bordello)
+GROMACS reminds you: "It doesn't pay to make predictions" (Crowded House)
 
 turning H bonds into constraints...
 turning H bonds into constraints...
@@ -74,33 +74,5 @@ turning H bonds into constraints...
 Calculating fourier grid dimensions for X Y Z
 Using a fourier grid of 60x60x60, spacing 0.115 0.115 0.115
 This run will generate roughly 2 Mb of data
---------------------------------------------------------------------------
-There are not enough slots available in the system to satisfy the 2
-slots that were requested by the application:
-
-  gmx_mpi
-
-Either request fewer slots for your application, or make more slots
-available for use.
-
-A "slot" is the Open MPI term for an allocatable unit where we can
-launch a process.  The number of slots available are defined by the
-environment in which Open MPI processes are run:
-
-  1. Hostfile, via "slots=N" clauses (N defaults to number of
-     processor cores if not provided)
-  2. The --host command line parameter, via a ":N" suffix on the
-     hostname (N defaults to 1 if not provided)
-  3. Resource manager (e.g., SLURM, PBS/Torque, LSF, etc.)
-  4. If none of a hostfile, the --host command line parameter, or an
-     RM is present, Open MPI defaults to the number of processor cores
-
-In all the above cases, if you want Open MPI to default to the number
-of hardware threads instead of the number of processor cores, use the
---use-hwthread-cpus option.
-
-Alternatively, you can use the --oversubscribe option to ignore the
-number of available slots when deciding the number of processes to
-launch.
---------------------------------------------------------------------------
+srun: error: Invalid numeric value "p" for --ntasks.
 Finished 7D35a_em_gromacs-test
