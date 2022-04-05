@@ -1,10 +1,10 @@
-/var/spool/slurmd/job18537441/slurm_script: line 17: ./run.sh: No such file or directory
-Starting at Tue Apr  5 12:50:59 PDT 2022
+/var/spool/slurmd/job18537673/slurm_script: line 17: ./run.sh: No such file or directory
+Starting at Tue Apr  5 13:03:27 PDT 2022
 Running on hosts: exanode-8-16
 Running on 1 nodes.
 Running  tasks.
 Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
-JobID : 18537441
+JobID : 18537673
                       :-) GROMACS - gmx grompp, 2020.2 (-:
 
                             GROMACS is written by:
@@ -38,10 +38,9 @@ Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gc
 Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
 Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
 Command line:
-  gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -v
+  gmx_mpi grompp -f 7D35a_em_gromacs-test.mdp -c 7D35a_input.gro -r 7D35a_input.gro -p topol.top -o 7D35a_em_gromacs-test.tpr -n index.ndx -maxwarn 1
 
-checking input for internal consistency...
-Setting the LD random seed to 2089679711
+Setting the LD random seed to -644536217
 
 -------------------------------------------------------
 Program:     gmx grompp, version 2020.2
@@ -53,7 +52,6 @@ Topology include file "toppar/forcefield.itp" not found
 For more information and tips for troubleshooting, please check the GROMACS
 website at http://www.gromacs.org/Documentation/Errors
 -------------------------------------------------------
-processing topology...
 --------------------------------------------------------------------------
 MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
 with errorcode 1.
@@ -62,7 +60,7 @@ NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
 You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
-slurmstepd: error: *** STEP 18537441.0 ON exanode-8-16 CANCELLED AT 2022-04-05T12:51:00 ***
+slurmstepd: error: *** STEP 18537673.0 ON exanode-8-16 CANCELLED AT 2022-04-05T13:03:27 ***
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
 srun: error: exanode-8-16: task 0: Exited with exit code 1
 --------------------------------------------------------------------------
