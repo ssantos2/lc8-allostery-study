@@ -23,7 +23,7 @@ echo "Running $SLURM_STEP_NUM_TASKS tasks."
 echo "Current working directory is `pwd`"
 echo "JobID : $SLURM_JOB_ID"
 
-srun --mpi=pmi2 gmx_mpi tune_pme -s 7D35a_md_gromacs_test.tpr -so 7D35a_md_tune_test.tpr -g 7D35a_md_tune_test.log
-srun gmx_mpi mdrun -deffnm 7D35a_md_tune_test -v 
+srun --mpi=pmi2 gmx_mpi tune_pme -s 7D35a_md_gromacs_test1.tpr -so 7D35a_md_tune_test1.tpr -g 7D35a_md_tune_test1.log
+srun gmx_mpi mdrun -deffnm 7D35a_md_tune_test1 -v 
 
 echo "Finished 7D35a_md_gromacs_test"	

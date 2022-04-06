@@ -1,0 +1,160 @@
+/var/spool/slurmd/job18545753/slurm_script: line 17: ./run.sh: No such file or directory
+Starting at Wed Apr  6 13:53:37 PDT 2022
+Running on hosts: exanode-7-23
+Running on 1 nodes.
+Running  tasks.
+Current working directory is /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
+JobID : 18545753
+                     :-) GROMACS - gmx tune_pme, 2020.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx tune_pme, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
+Command line:
+  gmx_mpi tune_pme -s 7D35a_md_gromacs_test1.tpr -so 7D35a_md_tune_test1.tpr -g 7D35a_md_tune_test1.log
+
+Reading file 7D35a_md_gromacs_test1.tpr, VERSION 2020.2 (single precision)
+Reading file 7D35a_md_gromacs_test1.tpr, VERSION 2020.2 (single precision)
+Will test 1 tpr file.
+
+-------------------------------------------------------
+Program:     gmx tune_pme, version 2020.2
+Source file: src/gromacs/tools/tune_pme.cpp (line 651)
+MPI rank:    1 (out of 2)
+
+Fatal error:
+The way to call mdrun must be set in the -mdrun command-line flag.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+slurmstepd: error: *** STEP 18545753.0 ON exanode-7-23 CANCELLED AT 2022-04-06T13:53:40 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: exanode-7-23: task 0: Killed
+srun: error: exanode-7-23: task 1: Exited with exit code 1
+                      :-) GROMACS - gmx mdrun, 2020.2 (-:
+
+                            GROMACS is written by:
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.2
+Executable:   /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k/bin/gmx_mpi
+Data prefix:  /home/exacloud/software/spack/opt/spack/linux-centos7-ivybridge/gcc-8.3.1/gromacs-2020.2-zcqbsvzumog2fdj6rzvu3xiytu2slj5k
+Working dir:  /home/groups/ZuckermanLab/santossh/lc8-allostery-study/gromacs/7D35/charmm-apo/gromacs-test
+Command line:
+  gmx_mpi mdrun -deffnm 7D35a_md_tune_test1 -v
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.2
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+MPI rank:    0 (out of 2)
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.2
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+MPI rank:    1 (out of 2)
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+slurmstepd: error: *** STEP 18545753.1 ON exanode-7-23 CANCELLED AT 2022-04-06T13:53:41 ***
+srun: error: exanode-7-23: tasks 0-1: Exited with exit code 1
+Finished 7D35a_md_gromacs_test
