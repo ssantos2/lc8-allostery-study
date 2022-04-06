@@ -19,7 +19,7 @@ rcoulomb                = 1.2
 coulombtype             = PME
 ;
 tcoupl                  = Nose-Hoover
-tc_grps                 = Protein Non-Protein
+tc_grps                 = SOLU SOLV
 tau_t                   = 1.0 1.0
 ref_t                   = 298.15 298.15
 ;
@@ -35,5 +35,5 @@ continuation            = yes
 ;
 nstcomm                 = 100
 comm_mode               = linear
-comm_grps               = Protein Non-Protein
+comm_grps               = SOLU SOLV
 ;
